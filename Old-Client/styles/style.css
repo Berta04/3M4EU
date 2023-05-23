@@ -1,0 +1,501 @@
+html {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/Europe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#inputReg {
+    float: center;
+    color: cyan;
+    font-size: 20px;
+}
+
+.panel{
+    background-image: url(../images/eu.jpg); 
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #898787;
+    border-radius: 10px;
+}
+
+
+.shadow1{
+	-webkit-box-shadow:  0 20px 15px -15px rgba(119, 119, 119, 0.85);
+	   -moz-box-shadow:  0 20px 15px -15px rgba(119, 119, 119, 0.85);
+	        box-shadow:  0 40px 30px -30px rgba(119, 119, 119, 0.85);
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    height: 700px;
+    padding: 2.5vw 2.5vw;
+}
+
+.panel-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.panel-switch button{
+    display: flex;
+    width: 5vw;
+    height: 40px;
+    background: #2916d1;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    transition: background-color 0.2s , color 0.2s , opacity 0.2s;
+}
+
+.panel-switch button:active{
+    background: #2916d1;
+    color: #c9c9c9;
+}
+
+.active-button{
+    opacity: 0.5;
+}
+
+button , .button , a {
+    cursor: pointer;
+}
+
+form h1{
+    display: flex;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 1.3em;
+    align-items: center;
+    justify-self: center;
+}
+
+fieldset{
+    border: none;
+}
+
+.loginError {
+    color: red;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    align-items: center;
+    justify-self: center;
+}
+
+.animate1 , .animate2 , .animate3 , .animate4{
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+}
+
+.animate1
+{
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+
+.animate2
+{
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+}
+
+
+.animate3
+{
+    -webkit-animation-delay: 1.1s;
+    -moz-animation-delay: 1.1s;
+}
+
+.animate4
+{
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+
+.animate5
+{
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+fieldset input{
+    background: rgba(0, 0, 0, 67%);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    margin: 10px 0;
+    padding: 5px;
+    text-indent: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+fieldset input::placeholder {
+    color: #c7c6c6;
+}
+
+
+fieldset input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 9px 0;
+    height:30px;
+}
+
+.login_form{
+    display: flex;
+    bottom:0;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    border: none;
+    border-radius: 10px;
+    background: #2916d1;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1;
+    
+    transition: background-color 0.2s , color 0.2s;
+}
+
+#signup-form-submit {
+    height: 7%;
+}
+
+#login-form-submit {
+    height: 7%;
+}
+
+#login-form-submit:active{
+    background: #2916d1;
+    color: #c9c9c9;
+}
+
+#login-fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#signup-fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registerPane {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginPane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p , a{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #ffffff;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 2;
+    gap: 10px;
+}
+
+#input {
+    width: 100%;
+    height: 100%;
+    flex: 20%;
+    display: flex;
+    order: 2;
+    align-items: center;
+    justify-content: flex-start ;
+}
+
+#contweb {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 80%;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#websize {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    order: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#bar {
+    display: none;
+    height: 0%;
+    width: 0%;
+    flex: 0%;
+}
+
+#login {
+    display: none;
+    height: 0%;
+    width: 0%;
+}
+
+#home {
+    display: none;
+    height: 0%;
+    width: 0%;
+}
+
+.webcam {
+    border: 2px solid black;
+    height: 30%;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.style {
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    border-radius: 10px;
+}
+
+.login {
+    margin-top: 10px;
+    padding: 10px;
+}
+.logRegFrame {
+    height: 83.5%;
+    width: 40%;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    max-height: 800px;
+}
+
+.logged-panel {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.logged-panel .labels {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.logged-panel .labels p {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logged-panel .labels .queueLabel{
+    font-size: 2vw;
+}
+
+.logged-panel .labels .queue{
+    font-size: 1.8vw;
+}
+
+.logged-panel .labels .timerLabel{
+    padding-top: 30px;
+    font-size: 1.8vw;
+}
+
+.logged-panel .labels .timer{
+    font-size: 1.5vw;
+}
+
+.logged-panel .userTurn {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+.logged-panel .userTurn .nations {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logged-panel .userTurn .nations .btn {
+    display: flex;
+    margin: 10px;
+    height: 10vh;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.logged-panel .userTurn .nations .btn:hover {
+    border: 2px solid rgb(0, 8, 124);
+    transform: scale(1.2);
+
+}
+
+.logged-panel .userTurn .container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logged-panel .userTurn .container .start {
+    width: 80%;
+    height: 4vh;
+    background: #2916d1;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.logged-panel .userTurn .container .clear {
+    margin: 10px;
+    width: 40%;
+    height: 3vh;
+    background: #2916d1;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.logged-panel .spacer {
+    height: 50%;
+}
+
+.logged-panel .watcher {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logged-panel .watcher .joinQueue{
+    width: 70%;
+    height: 5vh;
+    background: #2916d1;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+}

@@ -1,0 +1,378 @@
+@media (max-width:800px) {
+
+    html, body{
+        background:url(../images/eu.jpg)  #fff;
+        background-repeat:no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    #bar {
+        display: flex;
+        flex: 10%;
+        width: 100%;
+        height: 5%;
+        align-items: flex-end;
+    }
+
+    #login {
+        color: white;
+        font-size: 30px;
+        display: flex;
+        height: 100%;
+        width: 10%;
+        background: none;
+        border: none;
+    }
+
+    #loginicon {
+        color: white;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #home {
+        display: flex;
+        height: 100%;
+        width: 10%;
+        background: none;
+        border: none;
+    }
+
+    #houseicon {
+        color: white;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #input {
+        display: none;
+        flex: 90%;
+        height: 100%;
+    }
+
+    .logRegFrame {
+        width: 100%;
+    }
+
+    #websize {
+        height: 85%;
+        width: 100%;
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    #contweb {
+        height: 100%;
+        width: 100%;
+        flex: 100%;
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+    }
+    
+    .panel{
+        background: none;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+    }
+
+    .webcam {
+        border: 2px solid black;
+        width: 40%;
+        height: 25%;
+    }
+
+    .style {
+        border: none;
+        width: 100%;
+        height: 100%;
+        overflow: none;
+    }
+    
+    form{
+        padding: 50px;
+    }
+
+    .panel-switch{
+        margin-top: 30px;
+    }
+
+    .panel-switch button{
+        display: inline-block;
+        width: 80px;
+        margin: 0px 10px 50px;
+        font-weight: 600;
+        font-size: 0.7em;
+    }
+    
+    form h1{
+        font-size: 1.5em;
+    }
+    
+    .login_form{
+        bottom:0;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .logged-panel .labels .queueLabel{
+        font-size: 4vh;
+    }
+    
+    .logged-panel .labels .queue{
+        font-size: 3.6vh;
+    }
+    
+    .logged-panel .labels .timerLabel{
+        padding-top: 30px;
+        font-size: 3.6vh;
+    }
+    
+    .logged-panel .labels .timer{
+        font-size: 3vh;
+    }
+
+    .logRegFrame {
+        height: 100%;
+    }
+
+    .logged-panel .spacer {
+        height: 45%;
+    }
+
+    
+}
+
+@media (max-height:600px) {
+
+    html, body{
+        background:url(../images/eu.jpg)  #fff;
+        background-repeat: repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    #bar {
+        display: flex;
+        flex-direction: row;
+        flex: 10%;
+        width: 100%;
+        height: 10%;
+        justify-content: flex-end;
+    }
+
+    .login {
+        height: 20px;
+    }
+
+    #login {
+        color: white;
+        font-size: 30px;
+        display: flex;
+        height: 100%;
+        width: 7%;
+        background: none;
+        border: none;
+    }
+
+    #loginicon {
+        color: white;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #home {
+        display: flex;
+        height: 100%;
+        width: 7%;
+        background: none;
+        border: none;
+    }
+
+    #houseicon {
+        color: white;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #input {
+        display: none;
+        flex: 90%;
+        height: 100%;
+    }
+
+    .logRegFrame {
+        width: 100%;
+    }
+
+    #websize {
+        height: 85%;
+        width: 100%;
+        flex: 100%;
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    #contweb {
+        height: 100%;
+        width: 100%;
+        flex: 100%;
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+    }
+    
+    .panel{
+        background: none;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+    }
+
+    .webcam {
+        border: 2px solid black;
+        width: 80%;
+        height: 100%;
+    }
+
+    .style {
+        border: none;
+        width: 100%;
+        height: 100%;
+        overflow: none;
+    }
+    
+    form{
+        padding: 50px;
+    }
+
+    .panel-switch{
+        margin-top: 0px;
+        padding: 0;
+    }
+
+    .panel-switch button{
+        display: inline-block;
+        width: 80px;
+        margin: 0px 10px 0px;
+        font-weight: 600;
+        font-size: 0.7em;
+    }
+    
+    form h1{
+        font-size: 1.5em;
+    }
+
+    .login-form {
+        padding-top: 0;
+        height: 100%;
+    }
+
+    #login-form-submit {
+        height: 10%;
+    }
+
+    .logRegFrame {
+        height: 100%;
+    }
+
+    #signup-form-submit {
+        height: 15%;
+    }
+    
+    .login_form{
+        bottom:0;
+        width: 70%;
+        margin-top: 0px;
+        padding: 0;
+    }
+
+    .logged-panel {
+        flex-direction: row;
+    }
+
+    .logged-panel .labels .queueLabel{
+        font-size: 4vw;
+    }
+    
+    .logged-panel .labels .queue{
+        font-size: 3.6vw;
+    }
+    
+    .logged-panel .labels .timerLabel{
+        padding-top: 30px;
+        font-size: 3.6vw;
+    }
+    
+    .logged-panel .labels .timer{
+        font-size: 3vw;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .logged-panel .watcher {
+        height: 60%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .logged-panel .watcher .joinQueue {
+        height: 10vh;
+    }
+
+    .logged-panel .labels {
+        width: 50%;
+        order: 2;
+    }
+
+    .logged-panel .userTurn {
+        margin-top: 0;
+        order: 1;
+        width: 50%;
+    }
+
+    .logged-panel .userTurn .nations .btn {
+        width: 23%;
+        height: 15vh;
+    }
+
+    .logged-panel .userTurn .container .start {
+        height: 8vh;
+    }
+
+    .logged-panel .userTurn .container .clear {
+        height: 7vh;
+    }
+    
+}
