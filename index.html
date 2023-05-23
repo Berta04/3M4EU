@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3M4EU</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdn.rawgit.com/gdi2290/angular-websocket/v1.0.9/angular-websocket.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body ng-app="app" ng-controller="mainController">
+    <div id="home"></div>
+    <section id="sectionOne">
+        <header>
+            <div class="logo">
+                <img src="/images/Europe.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="joinQueue" onclick="openJoin()" ng-click="joinQueue()")>Join Queue<span></span></li>
+                    <li class="log active" onclick="login()">
+                        Login
+                        <span></span>
+                    </li>
+                    <div class="login">
+                        <div class="title">
+                            <h1>Login</h1>
+                            <div class="close" onclick="logClose()">
+                                <div class="line" style="--rot: -45deg"></div>
+                                <div class="line" style="--rot: 45deg"></div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="email">
+                                <input type="text" class="input loginEmail">
+                                <span class="text t1">Email</span>
+                            </div>
+                            <div class="password">
+                                <input type="password" class="input loginPassword">
+                                <span class="text t2">Password</span>
+                            </div>
+                            <div class="submit">
+                                <input type="button" value="Login" name="" id="" ng-click="login()">
+                                <h6 onclick="reg()">Don't have an account? Sing up here!</h6>
+                            </div>
+                            <div class="loginError"></div>
+                        </form>
+                    </div>
+                    <div class="register">
+                        <div class="title">
+                            <h1>Register</h1>
+                            <div class="close" onclick="regClose()">
+                                <div class="line" style="--rot: -45deg"></div>
+                                <div class="line" style="--rot: 45deg"></div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="email">
+                                <input type="text" class="input registerUser">
+                                <span class="text t3">Username</span>
+                            </div>
+                            <div class="email">
+                                <input type="text" class="input registerEmail">
+                                <span class="text t4">Email</span>
+                            </div>
+                            <div class="password">
+                                <input type="password" class="input registerPassword">
+                                <span class="text t5">Password</span>
+                            </div>
+                            <div class="password">
+                                <input type="password" class="input registerRepeatPassword">
+                                <span class="text t6">Reapeat password</span>
+                            </div>
+                            <div class="submit">
+                                <input type="button" value="Register" name="" id="" ng-click="register()">
+                            </div>
+                            <div class="registerError"></div>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <h1>Welcome to 3M4EU!</h1>
+            <div class="more">
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <h4><a href="#sectionTwo">Start watching</a></h4>
+                <div class="icon">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </div>
+                <span class="l3"></span>
+                <span class="l4"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionTwo">
+        <div class="container">
+           <div class="title">
+                <h1 class="titleWrite">Countries</h1>
+           </div>
+           <div class="bottom">
+                <div class="countries">
+                    <div class="indicatorLeft"></div>
+                    <div class="countryContainer">
+                        <div class="country slider" id="https://www.youtube.com/embed/D_aOgKnDRS4?autoplay=1&fs=1&mute=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080">
+                            <img src="/images/italy.jpg" alt="">
+                            <span>Italy</span>
+                        </div>
+                        <div class="country slider" id="https://www.youtube.com/embed/V2g4w36WGg8?autoplay=1&fs=1&mute=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080">
+                            <img src="/images/croatia.jpg" alt="">
+                            <span>Croatia</span>
+                        </div>
+                        <div class="country slider" id="link">
+                            <img src="/images/grmany.jpg" alt="">
+                            <span>Germany</span>
+                        </div>
+                        <div class="country slider" id="link">
+                            <img src="/images/irland.jpg" alt="">
+                            <span>Irland</span>
+                        </div>
+                        <div class="country slider" id="link">
+                            <img src="/images/portugal.jpg" alt="">
+                            <span>Portugal</span>
+                        </div>
+                        <div class="country slider" id="link">
+                            <img src="/images/slovenia.gif" alt="">
+                            <span>Slovenia</span>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <span class="l1"></span>
+                        <span class="l2"></span>
+                        <h4><a href="#sectionThree">See all countries</a></h4>
+                        <span class="l3"></span>
+                        <span class="l4"></span>
+                    </div>
+                    <div class="indicatorRight"></div>
+                </div>
+                <div class="iframe">
+                    <iframe src="" frameborder="0" class="video"></iframe>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+          <div class="subcontainer1">
+            <div class="title">
+                <h1>Choose your order</h1>
+                <div class="close" onclick="closeJoin()">
+                    <div class="line" style="--rot: -45deg"></div>
+                    <div class="line" style="--rot: 45deg"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="countries">
+                    <div class="country c1 c">
+                        <img src="/images/italy.jpg" alt="">
+                        <span class="s"></span>
+                    </div>
+                    <div class="country c2 c">
+                        <img src="/images/croatia.jpg" alt="">
+                        <span class="s"></span>
+                    </div>
+                    <div class="country c3 c">
+                        <img src="/images/grmany.jpg" alt="">
+                        <span class="s"></span>
+                    </div>
+                    <div class="country c4 c">
+                        <img src="/images/irland.jpg" alt="">
+                        <span class="s"></span>
+                    </div>
+                    <div class="country c5 c">
+                        <img src="/images/portugal.jpg" alt="">
+                        <span class="s"></span>
+                    </div>
+                    <div class="country c6 c">
+                        <img src="/images/slovenia.gif" alt="">
+                        <span class="s"></span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="reset" onclick="resetJoin()">
+                        Reset
+                    </div>
+                    <div class="confirm" onclick="doneJoin()" ng-click="startMMM()")>
+                        Confirm
+                    </div>
+                </div>
+           </div>
+          </div>
+          <div class="subcontainer2 active">
+            <div class="top">
+              <div class="title">
+                <h1>Wait for your turn</h1>
+                <div class="close" onclick="closeJoin()">
+                    <div class="line" style="--rot: -45deg"></div>
+                    <div class="line" style="--rot: 45deg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="qlabels">
+                <p class="queueLabel">Queue position</p>
+                <p class="queue">0</p>
+              </div>
+              <div class="tlabels">
+                <p class="TurnLabel">Machine turn</p>
+                <p class="turn">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="sectionThree">
+        <div class="title">
+            <h1>All countries</h1>
+        </div>
+        <div class="content">
+            <div class="country">
+                <span>Italy</span>
+                <iframe src="https://www.youtube.com/embed/D_aOgKnDRS4?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&mute=1&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080" frameborder="0"></iframe>
+            </div>
+            <div class="country">
+                <span>Croatia</span>
+                <iframe src="https://www.youtube.com/embed/V2g4w36WGg8?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&mute=1&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080" frameborder="0"></iframe>
+            </div>
+            <div class="country">
+                <span>Germany</span>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="country">
+                <span>Irland</span>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="country">
+                <span>Portugal</span>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="country">
+                <span>Slovenia</span>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>IIS Olivetti-Ivrea</h4>
+    </footer>
+
+    <script src="/script/dinamicSlider.js"></script>
+    <script src="/script/angular.js"></script>
+
+</body>
+</html>
